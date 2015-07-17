@@ -1,0 +1,19 @@
+.content-area {
+	@include span(17);
+	@include breakpoint(small) {
+		@include span(24);	
+	}
+}
+.site-content {
+	@include container($xlarge);
+}
+.site-content .widget-area {
+	@include span(6 last);
+	@include breakpoint(small) {
+		@include span(24);	
+	}
+}
+.site-footer {
+	clear: both;
+	@include span(24);
+}
